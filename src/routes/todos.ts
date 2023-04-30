@@ -8,7 +8,7 @@ type RequestParams = { todoId: string };
 
 let todos: Todo[] = [];
 
-router.get("/", (req: Request, res: Response, next: NextFunction) => {
+router.get("/all", (req: Request, res: Response, next: NextFunction) => {
   res.status(200).json({ todos });
 });
 
