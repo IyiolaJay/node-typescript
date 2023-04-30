@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
-  base = "node-typescript"
-  publish= "node-typescript/dist"
+  base = "."
+  publish= "./dist"
 
 
 [dev]
