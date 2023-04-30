@@ -11,6 +11,6 @@ app.use(bodyParser.json());
 
 app.use(todosRoutes);
 
-app.listen(PORT, ()=>{
+app.listen(PORT || 3000, ()=>{
     console.log("Now listening for requests")
 });
