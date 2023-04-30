@@ -10,6 +10,6 @@ const PORT = process.env.PORT;
 const app = (0, express_1.default)();
 app.use(body_parser_1.default.json());
 app.use(todos_1.default);
-app.listen(PORT, () => {
+app.listen(PORT || 3000, () => {
     console.log("Now listening for requests");
 });
